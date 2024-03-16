@@ -32,10 +32,6 @@ GIF also found at [Fun Facts Walkthrough](https://i.ibb.co/RvFfhMG/Code-Path-Pro
 
 GIF created with: [ScreenToGif](https://www.screentogif.com/) for Windows
 
-## Notes
-
-Describe any challenges encountered while building the app.
-
 ## License
 
     Copyright 2024 Rick Beckless
