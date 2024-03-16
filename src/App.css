@@ -1,0 +1,118 @@
+.app {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.card-set-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.card-set-info h1 {
+    font-size: 4rem;
+}
+
+.card-set-info p {
+    font-size: 1.5rem;
+}
+
+.flashcard {
+    cursor: pointer;
+    width: 60vw;
+    height: 55dvh;
+    perspective: 3500px;
+}
+
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.front {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.back .card-text {
+    font-size: 1.3rem;
+    font-style: italic;
+
+}
+
+.next-btn {
+    width: 10vw;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.card-feedback-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    width: 20vw;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 2%;
+}
